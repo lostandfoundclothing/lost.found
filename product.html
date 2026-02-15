@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product · Lost &amp; Found</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="logo" href="index.html">LOST &amp; FOUND</a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="shop.html">Shop</a>
+          <a href="custom.html">Custom Studio</a>
+          <a href="checkout.html">Checkout</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" data-product-page>
+      <section class="page-hero">
+        <h1>Product</h1>
+      </section>
+
+      <section class="product-layout">
+        <div class="gallery">
+          <div class="gallery-item"><img src="assets/images/product-dark.svg" alt="Front view" loading="lazy" data-preview-image /></div>
+          <div class="gallery-item"><img src="assets/images/product-dark.svg" alt="Back view" loading="lazy" data-preview-image /></div>
+          <div class="gallery-item"><img src="assets/images/product-dark.svg" alt="Fabric detail" loading="lazy" data-preview-image /></div>
+          <div class="gallery-item"><img src="assets/images/product-dark.svg" alt="Style detail" loading="lazy" data-preview-image /></div>
+        </div>
+
+        <div>
+          <h2>Foundry Training Hoodie</h2>
+          <p class="price">$112</p>
+
+          <p class="kicker">Size</p>
+          <div class="option-row" role="group" aria-label="Select size">
+            <button class="pill" type="button" data-size="S">S</button>
+            <button class="pill" type="button" data-size="M">M</button>
+            <button class="pill" type="button" data-size="L">L</button>
+            <button class="pill" type="button" data-size="XL">XL</button>
+          </div>
+
+          <p class="kicker">Color</p>
+          <div class="option-row" role="group" aria-label="Select color">
+            <button class="color-swatch" type="button" data-color="black" data-preview="assets/images/product-dark.svg" aria-label="Black"></button>
+            <button class="color-swatch" type="button" data-color="graphite" data-preview="assets/images/product-graphite.svg" aria-label="Graphite"></button>
+            <button class="color-swatch" type="button" data-color="crimson" data-preview="assets/images/product-crimson.svg" aria-label="Crimson detail"></button>
+          </div>
+
+          <p class="kicker">Quantity</p>
+          <input type="number" value="1" min="1" aria-label="Quantity" />
+
+          <a class="btn" href="checkout.html" data-add-cart>Add to Cart</a>
+          <p class="selection-error" data-selection-error hidden>Please select a size before adding to cart.</p>
+
+          <div class="accordion">
+            <details open>
+              <summary>Description</summary>
+              <p>Heavyweight premium fleece with structured silhouette built for movement and statement.</p>
+            </details>
+            <details>
+              <summary>Materials</summary>
+              <p>450gsm cotton blend with performance inner lining and matte hardware.</p>
+            </details>
+            <details>
+              <summary>Sizing</summary>
+              <p>Oversized athletic fit. Size down for a sharper profile.</p>
+            </details>
+            <details>
+              <summary>Shipping</summary>
+              <p>Standard 4-7 business days. Custom orders require additional production time.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>You May Also Like</h2>
+        <div class="product-grid">
+          <a class="product-link" href="product.html" aria-label="No Signal Joggers, $89">
+            <div class="product-media"><img src="assets/images/product-dark.svg" alt="No Signal Joggers" loading="lazy" /></div>
+            <div class="product-info"><div class="product-title">No Signal Joggers</div><div class="price">$89</div></div>
+          </a>
+          <a class="product-link" href="product.html" aria-label="Obsidian Tee, $68">
+            <div class="product-media"><img src="assets/images/product-graphite.svg" alt="Obsidian Tee" loading="lazy" /></div>
+            <div class="product-info"><div class="product-title">Obsidian Tee</div><div class="price">$68</div></div>
+          </a>
+          <a class="product-link" href="product.html" aria-label="Ascend Tank, $54">
+            <div class="product-media"><img src="assets/images/product-crimson.svg" alt="Ascend Tank" loading="lazy" /></div>
+            <div class="product-info"><div class="product-title">Ascend Tank</div><div class="price">$54</div></div>
+          </a>
+        </div>
+      </section>
+
+      <div class="mobile-sticky-cart">
+        <a class="btn" href="checkout.html" data-add-cart>Add to Cart</a>
+      </div>
+    </main>
+
+    <footer class="footer">Lost &amp; Found</footer>
+
+    <script src="js/ui.js"></script>
+    <script src="js/product.js"></script>
+  </body>
+</html>
